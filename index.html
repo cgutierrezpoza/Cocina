@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cocina Básica · Fichas técnicas</title>
+<meta name="description" content="Recetario interactivo con las fichas técnicas de Cocina Básica (PGG1101).">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-slug="" style="">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true">🍳</span>Cocina Básica</a>
+    <ul class="nav-links"><li><a href="index.html" aria-current=page>Inicio</a></li><li><a href="index.html#areas">Áreas</a></li><li><a href="index.html#recetario">Recetas</a></li></ul>
+    <div class="nav-ext"><a class="salsas" href="#" data-enlace="salsas">🥣 <span class="txt">Salsas</span></a><a class="panaderia" href="#" data-enlace="panaderia">🥖 <span class="txt">Panadería</span></a></div>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Escuela de Gastronomía · Duoc UC sede San Andrés Concepción</span>
+      <h1>Fichas técnicas de <em>cocina básica</em></h1>
+      <p class="lead">Las 41 preparaciones de la asignatura Cocina Básica convertidas en fichas interactivas: ajusta las porciones, sigue cada etapa del proceso y explora la cocina por áreas.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#areas">Explorar las áreas →</a>
+        <button class="btn btn-soft" id="random" type="button">🎲 Receta al azar</button>
+      </div>
+      <div class="hero-stats">
+        <div><b>8</b><span>áreas</span></div>
+        <div><b>41</b><span>recetas</span></div>
+        <div><b>164</b><span>ingredientes</span></div>
+        <div class="visit-stat" id="visitas" data-contador="cocina-basica-fichas-duocuc-sanandres/visitas" hidden><b id="visitas-num">0</b><span>personas han visitado</span></div>
+      </div>
+    </div>
+    <div class="hero-art"><a class="hero-card c1" href="recetas/cazuela.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chilean_Cazuela.JPG?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/cazuela.svg'"><span>Cazuela</span></a><a class="hero-card c2" href="recetas/paila-marina.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paila_marina_01.JPG?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/paila-marina.svg'"><span>Paila Marina</span></a><a class="hero-card c3" href="recetas/salsa-bolognesa-ragu.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tagliatelle_al_ragu_Bolognese.jpg?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-bolognesa-ragu.svg'"><span>Salsa Bolognesa (Ragú)</span></a></div>
+  </div>
+</section>
+
+<section class="section" id="presentacion" style="padding-top:40px">
+  <div class="wrap intro-grid">
+    <div class="intro-text reveal">
+      <span class="eyebrow">Presentación</span>
+      <h2>Del mesón al plato</h2>
+      <p>Cada ficha técnica reúne lo necesario para producir una preparación de forma estandarizada: su argumentación comercial y técnica, la categoría, el rendimiento, los productos con sus cantidades y el proceso dividido en etapas.</p>
+      <p>Las cantidades están calculadas para el rendimiento indicado en cada ficha. Usa el selector de porciones para recalcularlas y marca cada etapa a medida que avanzas.</p>
+      <blockquote class="quote">Antes de empezar: desinfectar y limpiar el área de trabajo, repasar platos, disponer productos y materiales de preparación, cocción y montaje. Organizar todo.</blockquote>
+    </div>
+    <div>
+      <h3 class="intro-sub reveal">Tres sitios, una cocina</h3>
+      <div class="sites">
+        <a class="site-card reveal" href="#" data-enlace="salsas" style="background:#E7DFFA"><span class="ico">🥣</span><span><h3>Salsas</h3><p>Salsas madre y derivadas del manual de Cocina Básica.</p></span></a>
+        <a class="site-card reveal" href="#" data-enlace="panaderia" style="background:#FFE3C8"><span class="ico">🥖</span><span><h3>Panadería</h3><p>Ingredientes, procesos y técnicas de panificación.</p></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Menú</span><h2>Áreas de la cocina</h2>
+      <p>Elige un área para ver sus preparaciones.</p></div>
+    <div class="areas-grid"><a class="area-card reveal" href="areas/ensaladas.html" style="--area-bg:#CFEFE3;--accent:#3E9C78">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 01</span>
+  <h3>Ensaladas y entradas frías</h3>
+  <p>Preparaciones frías que abren el menú: ensaladas simples y compuestas, aderezadas con vinagretas o salsas emulsionadas, y entradas de mariscos.</p>
+  <span class="count">4 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ensalada_Chilena.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-chilena.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salade_ni%C3%A7oise_%287545098258%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-mixta.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caesar_Salad_%26_Grilled_Chicken_%2830548011308%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-cesar-de-pollo.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Concholepas_concholepas_%28locos%29_01.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/locos-con-mayonesa.svg'"></div>
+</a><a class="area-card reveal" href="areas/salsas.html" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 02</span>
+  <h3>Salsas</h3>
+  <p>Emulsiones frías, salsas de tomate para pastas, pesto, salsas cremosas y la bechamel con su derivada de alcaparras.</p>
+  <span class="count">8 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Homemade_mayonnaise.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-mayonesa.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Raspberry_vinaigrette.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/dressing.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spaghetti_al_Pomodoro.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-pomodoro.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spaghetti_alla_Puttanesca.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-a-la-puttanesca.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tagliatelle_al_ragu_Bolognese.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-bolognesa-ragu.svg'"></div>
+</a><a class="area-card reveal" href="areas/fondos.html" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 03</span>
+  <h3>Fondos y ayudas de cocina</h3>
+  <p>Caldos base que dan sabor y cuerpo a sopas, salsas y guisos: fondo blanco de ave, fumet de pescado y fondo oscuro de vacuno.</p>
+  <span class="count">3 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pot_of_chicken_broth.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fondo-blanco-de-ave.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fumet_%28Lubina%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fumet-de-pescado.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Broth_hg.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fondo-oscuro-de-vacuno.svg'"></div>
+</a><a class="area-card reveal" href="areas/sopas.html" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 04</span>
+  <h3>Sopas, cremas y potajes</h3>
+  <p>Preparaciones líquidas y espesas: sopa de mariscos, cremas ligadas con roux o por puré y la tradicional cazuela chilena.</p>
+  <span class="count">4 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caldo_de_mariscos.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/sopa-de-mariscos.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cream_of_mushroom_soup.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-de-champinon-paris-y-callampas-deshidratadas.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pumpkin_Cream_Soup.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-de-zapallo-camote-con-jengibre.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chilean_Cazuela.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/cazuela.svg'"></div>
+</a><a class="area-card reveal" href="areas/pastas.html" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 05</span>
+  <h3>Pastas frescas</h3>
+  <p>Masas elaboradas con harina, sémola y huevo: pasta básica y sus formatos, pasta rellena y gnocchi de papa.</p>
+  <span class="count">3 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nonna_tagliatelle_01.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pasta-basica-al-huevo.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sorrentinos.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/sorrentinos-l-aglio-olio.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gnocchi.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/gnocchi.svg'"></div>
+</a><a class="area-card reveal" href="areas/carnes.html" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 06</span>
+  <h3>Carnes y aves</h3>
+  <p>Ítems principales de vacuno, cerdo y ave: grillados, salteados, braseados, asados y cocciones al vacío.</p>
+  <span class="count">9 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled_chicken_breast%2C_Santo_Domingo%2C_La_Palma.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/suprema-grillada.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken_cordon_bleu%2C_Bee%27s_Steak_and_Shake%2C_Sleman%2C_Yogyakarta.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pollo-cordon-bleu.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Beef_Stroganoff.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/strogonoff.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bife_de_Lomo_%285383969209%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/vacuno-grillado.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Carne_mechada.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/carne-mechada.svg'"></div>
+</a><a class="area-card reveal" href="areas/pescados.html" style="--area-bg:#D3F1F1;--accent:#2E8F95">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 07</span>
+  <h3>Pescados y mariscos</h3>
+  <p>Productos del mar chileno: pescado del día a la plancha, paila marina y jardín de mariscos.</p>
+  <span class="count">3 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fried_Fish_Fillet.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pescado-del-dia.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paila_marina_01.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/paila-marina.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Clams_cooked_in_Lemon_and_coriander.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/jardin-de-mariscos.svg'"></div>
+</a><a class="area-card reveal" href="areas/guarniciones.html" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 08</span>
+  <h3>Guarniciones</h3>
+  <p>Acompañamientos que completan el plato: purés y sus derivados, arroces, papas en distintos cortes y vegetales salteados.</p>
+  <span class="count">7 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pur%C3%A9_de_patates.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pures-derivados.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rice_pilaf.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/arroz-pilaf.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pommes_duchesse.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/masa-duquesa-y-papas-torneadas.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kartoffelkroketten.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/papas-croqueta.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pommes-1.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/papas-pont-neuf.svg'"></div>
+</a></div>
+  </div>
+</section>
+
+<section class="section" id="recetario">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Recetario</span><h2>Todas las recetas</h2>
+      <p>Filtra por área o busca por nombre o ingrediente (prueba con “merkén”, “ricotta” o “choritos”).</p></div>
+    <div class="toolbar">
+      <div class="tabs" role="toolbar" aria-label="Filtrar por área"><button class="tab" data-area="todas" aria-pressed="true">Todas</button><button class="tab" data-area="ensaladas" aria-pressed="false" style="--tab-acc:#3E9C78"><span class="chip-dot"></span>Ensaladas</button><button class="tab" data-area="salsas" aria-pressed="false" style="--tab-acc:#7A62C6"><span class="chip-dot"></span>Salsas</button><button class="tab" data-area="fondos" aria-pressed="false" style="--tab-acc:#B8901A"><span class="chip-dot"></span>Fondos</button><button class="tab" data-area="sopas" aria-pressed="false" style="--tab-acc:#C9653F"><span class="chip-dot"></span>Sopas</button><button class="tab" data-area="pastas" aria-pressed="false" style="--tab-acc:#3F82BC"><span class="chip-dot"></span>Pastas</button><button class="tab" data-area="carnes" aria-pressed="false" style="--tab-acc:#C95C7C"><span class="chip-dot"></span>Carnes</button><button class="tab" data-area="pescados" aria-pressed="false" style="--tab-acc:#2E8F95"><span class="chip-dot"></span>Mar</button><button class="tab" data-area="guarniciones" aria-pressed="false" style="--tab-acc:#6A9A30"><span class="chip-dot"></span>Guarniciones</button></div>
+      <label class="search"><span class="sr-only">Buscar receta</span><input id="q" type="search" placeholder="Buscar receta o ingrediente…"></label>
+    </div>
+    <div class="recipes" id="recipes"><a class="r-card reveal" href="recetas/ensalada-chilena.html" data-area="ensaladas" data-search="Ensalada Chilena Ensalada emblemática de la gastronomía chilena Ensalada Ensaladas y entradas frías Tomate Cebolla Cilantro Ají verde Aceite vegetal" style="--area-bg:#CFEFE3;--accent:#3E9C78">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ensalada_Chilena.jpg?width=600" alt="Foto de Ensalada Chilena" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-chilena.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Ensaladas</span>
+    <h3>Ensalada Chilena</h3>
+    <p class="sub">Ensalada emblemática de la gastronomía chilena</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 5</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/ensalada-mixta.html" data-area="ensaladas" data-search="Ensalada Mixta Ensalada Ensalada Ensaladas y entradas frías Tomate Lechuga hidropónica Porotos Verdes Papas Aceitunas Pimentón rojo Filetes de anchoas Aceite Vinagre Sal Pimienta Huevo" style="--area-bg:#CFEFE3;--accent:#3E9C78">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salade_ni%C3%A7oise_%287545098258%29.jpg?width=600" alt="Foto de Ensalada Mixta" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-mixta.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Ensaladas</span>
+    <h3>Ensalada Mixta</h3>
+    <p class="sub">Ensalada</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 12</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/ensalada-cesar-de-pollo.html" data-area="ensaladas" data-search="Ensalada César de pollo Ensalada César con agregado de pollo Ensalada Ensaladas y entradas frías Lechuga Costina Limón Ajo (diente) Queso Parmesano Anchoas Mayonesa Mostaza Dijon Pan de molde Aceite de oliva Pechuga de pollo" style="--area-bg:#CFEFE3;--accent:#3E9C78">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caesar_Salad_%26_Grilled_Chicken_%2830548011308%29.jpg?width=600" alt="Foto de Ensalada César de pollo" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ensalada-cesar-de-pollo.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Ensaladas</span>
+    <h3>Ensalada César de pollo</h3>
+    <p class="sub">Ensalada César con agregado de pollo</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 5 etapas</span><span>🧂 10</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/locos-con-mayonesa.html" data-area="ensaladas" data-search="Locos con mayonesa Entrada Entrada Ensaladas y entradas frías Locos Mayonesa Jugo de limón Cebolla Apio Cilantro Ajo Lechuga Lollo green Sal Vino blanco Pimienta" style="--area-bg:#CFEFE3;--accent:#3E9C78">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Concholepas_concholepas_%28locos%29_01.JPG?width=600" alt="Foto de Locos con mayonesa" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/locos-con-mayonesa.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Ensaladas</span>
+    <h3>Locos con mayonesa</h3>
+    <p class="sub">Entrada</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 11</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-mayonesa.html" data-area="salsas" data-search="Salsa mayonesa Salsa estable fría Salsa estable fría Salsas Yemas de Huevo Huevo Aceite Mostaza Dijon Vinagre o Jugo Limón Sal Pimienta" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Homemade_mayonnaise.jpg?width=600" alt="Foto de Salsa mayonesa" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-mayonesa.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa mayonesa</h3>
+    <p class="sub">Salsa estable fría</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 7</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/dressing.html" data-area="salsas" data-search="Dressing Salsa inestable fría Salsa inestable fría Salsas Jugo de Limón o Vinagre Aceite Mostaza Sal Pimienta" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Raspberry_vinaigrette.jpg?width=600" alt="Foto de Dressing" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/dressing.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Dressing</h3>
+    <p class="sub">Salsa inestable fría</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 2 etapas</span><span>🧂 5</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-pomodoro.html" data-area="salsas" data-search="Salsa Pomodoro Salsa a base de tomate Salsa Salsas Cebolla Ajo (diente) Tomate pera o rocky Aceite de oliva Laurel Orégano Vino blanco Sal Pimienta negra molida Azúcar granulada (opcional)" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spaghetti_al_Pomodoro.JPG?width=600" alt="Foto de Salsa Pomodoro" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-pomodoro.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa Pomodoro</h3>
+    <p class="sub">Salsa a base de tomate</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 10</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-a-la-puttanesca.html" data-area="salsas" data-search="Salsa a la Puttanesca Salsa a base de tomate, aceitunas, alcaparras y ají Salsa Salsas Aceitunas negras Ají guindilla Perejil Ajo Salsa pomodoro Alcaparras Anchoas Pimienta negra molida Queso parmesano Aceite de Oliva" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spaghetti_alla_Puttanesca.jpg?width=600" alt="Foto de Salsa a la Puttanesca" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-a-la-puttanesca.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa a la Puttanesca</h3>
+    <p class="sub">Salsa a base de tomate, aceitunas, alcaparras y ají</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 10</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-bolognesa-ragu.html" data-area="salsas" data-search="Salsa Bolognesa (Ragú) Salsa a base de tomate, cebolla y carne de vacuno Salsa Salsas Posta Rosada/Paleta/Asiento Zanahoria Apio Ajo (diente) Cebolla Queso parmesano Salsa pomodoro Laurel Orégano Vino Sal Pimienta negra molida" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tagliatelle_al_ragu_Bolognese.jpg?width=600" alt="Foto de Salsa Bolognesa (Ragú)" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-bolognesa-ragu.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa Bolognesa (Ragú)</h3>
+    <p class="sub">Salsa a base de tomate, cebolla y carne de vacuno</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 12</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-pesto.html" data-area="salsas" data-search="Salsa Pesto Salsa en base a albahaca Salsa Salsas Albahaca Ajo Diente Almendras Aceite de Oliva Pimienta Negra Sal Queso Parmesano" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pesto_being_made_in_a_pestle_and_mortar.jpg?width=600" alt="Foto de Salsa Pesto" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-pesto.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa Pesto</h3>
+    <p class="sub">Salsa en base a albahaca</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 7</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-de-champinones.html" data-area="salsas" data-search="Salsa de champiñones Salsa Salsa Salsas Aceite de oliva Vino blanco Sal Pimienta Chalotas Champiñones Crema" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Filet_mignon_with_mushroom-cream_sauce.jpg?width=600" alt="Foto de Salsa de champiñones" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-de-champinones.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa de champiñones</h3>
+    <p class="sub">Salsa</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 7</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/salsa-bechamel-y-salsa-de-alcaparras.html" data-area="salsas" data-search="Salsa Bechamel y Salsa de Alcaparras Salsas blanca madre (mezcla de harina, mantequilla y leche) Salsa Salsas Vino Blanco Alcaparras Harina Sal Pimienta blanca Nuez moscada Leche Mantequilla" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2021_Sos_beszamelowy.jpg?width=600" alt="Foto de Salsa Bechamel y Salsa de Alcaparras" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/salsa-bechamel-y-salsa-de-alcaparras.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Salsas</span>
+    <h3>Salsa Bechamel y Salsa de Alcaparras</h3>
+    <p class="sub">Salsas blanca madre (mezcla de harina, mantequilla y leche)</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 8</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/fondo-blanco-de-ave.html" data-area="fondos" data-search="Fondo blanco de ave Ayudas de cocina Ayudas de cocina Fondos y ayudas de cocina Zanahoria Cebolla Puerro Apio Tallos de perejil Tomillo fresco Laurel Ajo Pechuga de pollo Agua Bouquet garni Gasa Pita" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pot_of_chicken_broth.jpg?width=600" alt="Foto de Fondo blanco de ave" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fondo-blanco-de-ave.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fondos</span>
+    <h3>Fondo blanco de ave</h3>
+    <p class="sub">Ayudas de cocina</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 13</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/fumet-de-pescado.html" data-area="fondos" data-search="Fumet de pescado Caldo de pescado Ayudas de cocina Fondos y ayudas de cocina Zanahoria (optativa) Cebolla Puerro Apio Tallos de perejil Tomillo fresco Laurel Ajo Congrio colorado Mantequilla Agua Vino Blanco Gasa Pita" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fumet_%28Lubina%29.jpg?width=600" alt="Foto de Fumet de pescado" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fumet-de-pescado.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fondos</span>
+    <h3>Fumet de pescado</h3>
+    <p class="sub">Caldo de pescado</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 2 etapas</span><span>🧂 14</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/fondo-oscuro-de-vacuno.html" data-area="fondos" data-search="Fondo oscuro de vacuno Ayuda de cocina Ayuda de cocina Fondos y ayudas de cocina Huesos de vacuno Zanahoria Cebolla Puerro Apio Tallos de perejil Ajo (diente) Tomate Fondo blanco o agua Bouquet garni Concentrado de tomate Harina Vino tinto" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Broth_hg.jpg?width=600" alt="Foto de Fondo oscuro de vacuno" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/fondo-oscuro-de-vacuno.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fondos</span>
+    <h3>Fondo oscuro de vacuno</h3>
+    <p class="sub">Ayuda de cocina</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 2 etapas</span><span>🧂 13</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/sopa-de-mariscos.html" data-area="sopas" data-search="Sopa de mariscos Sopa elaborada con productos del mar Sopa Sopas, cremas y potajes Pimentón rojo Cebolla Orégano fresco Tomate pomodoro tarro Zanahoria Papas Ajo Jugo de limón Merkén Hojas de cilantro Agua Vino blanco Sal Pimienta Ají color Aceite de oliva Choritos frescos Almejas frescos Camarones ecuatoriano congelado" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Caldo_de_mariscos.jpg?width=600" alt="Foto de Sopa de mariscos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/sopa-de-mariscos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Sopas</span>
+    <h3>Sopa de mariscos</h3>
+    <p class="sub">Sopa elaborada con productos del mar</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 19</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/crema-de-champinon-paris-y-callampas-deshidratadas.html" data-area="sopas" data-search="Crema de champiñón París y callampas deshidratadas Sopa espesa elaborada con diferentes setas, acompañado de tocino y huevo Cremas y potajes Sopas, cremas y potajes Champiñón paris Cebolla Ajo (diente) Panceta ahumada Mantequilla Huevos de codorniz Crema Callampas deshidratadas Harina Fondo de verduras o ave Vino blanco" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cream_of_mushroom_soup.jpg?width=600" alt="Foto de Crema de champiñón París y callampas deshidratadas" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-de-champinon-paris-y-callampas-deshidratadas.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Sopas</span>
+    <h3>Crema de champiñón París y callampas deshidratadas</h3>
+    <p class="sub">Sopa espesa elaborada con diferentes setas, acompañado de tocino y huevo</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 11</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/crema-de-zapallo-camote-con-jengibre.html" data-area="sopas" data-search="Crema de zapallo camote con jengibre Crema elaborada con zapallo camote y jengibre Potaje Sopas, cremas y potajes Zapallo camote Cebolla Jengibre Ajo (diente) Crema Pan de molde Sésamo negro Fondo de ave Aceite de oliva" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pumpkin_Cream_Soup.jpg?width=600" alt="Foto de Crema de zapallo camote con jengibre" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-de-zapallo-camote-con-jengibre.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Sopas</span>
+    <h3>Crema de zapallo camote con jengibre</h3>
+    <p class="sub">Crema elaborada con zapallo camote y jengibre</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 9</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/cazuela.html" data-area="sopas" data-search="Cazuela Cazuela de res Principal Sopas, cremas y potajes Osobuco de res Arroz Comino Pimienta negra Agua Sal Orégano Pimentón Papas Cebolla Zanahoria Ajo Zapallo camote Choclo americano Poroto verde Apio Cilantro" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chilean_Cazuela.JPG?width=600" alt="Foto de Cazuela" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/cazuela.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Sopas</span>
+    <h3>Cazuela</h3>
+    <p class="sub">Cazuela de res</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 17</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/pasta-basica-al-huevo.html" data-area="pastas" data-search="Pasta básica al huevo Pasta lista Principal Pastas frescas Harina Sémola Aceite de oliva Sal Huevos Puré de zanahoria Puré de espinaca Puré de betarraga" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nonna_tagliatelle_01.jpg?width=600" alt="Foto de Pasta básica al huevo" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pasta-basica-al-huevo.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Pastas</span>
+    <h3>Pasta básica al huevo</h3>
+    <p class="sub">Pasta lista</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 2 etapas</span><span>🧂 8</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/sorrentinos-l-aglio-olio.html" data-area="pastas" data-search="Sorrentinos L&#x27;Aglio Olio Pasta rellena de Ricotta y Espinaca Principal o acompañamiento Pastas frescas Espinaca Harina Sémola Aceite de oliva Sal Huevos Ricotta" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sorrentinos.jpg?width=600" alt="Foto de Sorrentinos L&#x27;Aglio Olio" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/sorrentinos-l-aglio-olio.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Pastas</span>
+    <h3>Sorrentinos L&#x27;Aglio Olio</h3>
+    <p class="sub">Pasta rellena de Ricotta y Espinaca</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 7</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/gnocchi.html" data-area="pastas" data-search="Gnocchi Pasta hecha a base de papa Principal Pastas frescas Harina Aceite de oliva Sal Yemas Queso parmesano Papas" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gnocchi.jpg?width=600" alt="Foto de Gnocchi" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/gnocchi.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Pastas</span>
+    <h3>Gnocchi</h3>
+    <p class="sub">Pasta hecha a base de papa</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 6</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/suprema-grillada.html" data-area="carnes" data-search="Suprema Grillada Pechuga de pollo grillada. Item principal Carnes y aves Pechuga de pollo Aceite de maravilla Sal Pimienta" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled_chicken_breast%2C_Santo_Domingo%2C_La_Palma.jpg?width=600" alt="Foto de Suprema Grillada" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/suprema-grillada.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Suprema Grillada</h3>
+    <p class="sub">Pechuga de pollo grillada.</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 4</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/pollo-cordon-bleu.html" data-area="carnes" data-search="Pollo Cordon Bleu Pechuga de pollo frita rellena de jamón queso Principal Carnes y aves Pechuga de Pollo Jamón planchado Queso Gauda laminado Huevos Harina Pan Rallado Aceite Sal Pimienta" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken_cordon_bleu%2C_Bee%27s_Steak_and_Shake%2C_Sleman%2C_Yogyakarta.jpg?width=600" alt="Foto de Pollo Cordon Bleu" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pollo-cordon-bleu.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Pollo Cordon Bleu</h3>
+    <p class="sub">Pechuga de pollo frita rellena de jamón queso</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 9</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/strogonoff.html" data-area="carnes" data-search="Strogonoff Strogonoff de vacuno Principal Carnes y aves Filete de vacuno Aceite de oliva Pepinillo dill Salsa española Vino tinto Mostaza Dijon Cebolla Pimentón Champiñón Paris Perejil Crema" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Beef_Stroganoff.jpg?width=600" alt="Foto de Strogonoff" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/strogonoff.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Strogonoff</h3>
+    <p class="sub">Strogonoff de vacuno</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 11</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/vacuno-grillado.html" data-area="carnes" data-search="Vacuno grillado Lomo de res grillado Ítem principal Carnes y aves Lomo de vacuno Aceite Sal" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bife_de_Lomo_%285383969209%29.jpg?width=600" alt="Foto de Vacuno grillado" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/vacuno-grillado.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Vacuno grillado</h3>
+    <p class="sub">Lomo de res grillado</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 5 etapas</span><span>🧂 3</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/carne-mechada.html" data-area="carnes" data-search="Carne Mechada Carne Mechada con verduras Ítem principal Carnes y aves Choclillo Cebolla Zanahoria Pimiento rojo Pimiento verde Ajo Apio fresco Vino tinto Sal Pimienta Agua Aceite" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Carne_mechada.jpg?width=600" alt="Foto de Carne Mechada" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/carne-mechada.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Carne Mechada</h3>
+    <p class="sub">Carne Mechada con verduras</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 12</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/osobuco-a-la-milanesa-acompanado-con-polenta.html" data-area="carnes" data-search="Osobuco a la milanesa acompañado con polenta Osobuco acompañados de polenta Principal Carnes y aves Osobuco con hueso Tocino ahumado Romero Tomillo Zanahoria Cebolla Ajo Perejil Pimiento rojo Salsa española Vino tinto Polenta Fondo de ave Azafrán Vino blanco Harina Agua Clara de huevo Crema Mantequilla" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg?width=600" alt="Foto de Osobuco a la milanesa acompañado con polenta" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/osobuco-a-la-milanesa-acompanado-con-polenta.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Osobuco a la milanesa acompañado con polenta</h3>
+    <p class="sub">Osobuco acompañados de polenta</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 4 etapas</span><span>🧂 20</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/roast-beef.html" data-area="carnes" data-search="Roast beef Carne de res poco cocinada, servida fría Ítem principal Carnes y aves Lomo Liso Mostaza antigua Sal Pimienta negra entera Aceite de oliva Pita Tomillo Ajo" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Roastbeef.jpg?width=600" alt="Foto de Roast beef" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/roast-beef.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Roast beef</h3>
+    <p class="sub">Carne de res poco cocinada, servida fría</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 8</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/solomillo-a-la-plancha-y-solomillo-sous-vide.html" data-area="carnes" data-search="Solomillo a la Plancha y Solomillo sous vide Cocción tradicional y Sous vide Plato principal Carnes y aves Solomillo Sal Pimienta Ajo" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seared_and_roasted_Pork_Tenderloin_in_Cast_Iron_Skillet.jpg?width=600" alt="Foto de Solomillo a la Plancha y Solomillo sous vide" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/solomillo-a-la-plancha-y-solomillo-sous-vide.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Solomillo a la Plancha y Solomillo sous vide</h3>
+    <p class="sub">Cocción tradicional y Sous vide</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 4</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/saltimbocca-de-cerdo-a-la-romana.html" data-area="carnes" data-search="Saltimbocca de cerdo a la romana Plato emblemático de cocina italiana, zona Roma Antipasto Carnes y aves Salvia fresca Fondo de verduras Aceite de oliva Harina Vino Blanco Lomo de cerdo Prosciutto o Jamon serrano Mantequilla s/sal Mondadiente" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saltimbocca_alla_Romana.jpg?width=600" alt="Foto de Saltimbocca de cerdo a la romana" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/saltimbocca-de-cerdo-a-la-romana.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Carnes</span>
+    <h3>Saltimbocca de cerdo a la romana</h3>
+    <p class="sub">Plato emblemático de cocina italiana, zona Roma</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 9</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/pescado-del-dia.html" data-area="pescados" data-search="Pescado del día Filete de pescado del día a la plancha Principal Pescados y mariscos Pescado del dia Sal Pimienta Aceite Mantequilla Limón" style="--area-bg:#D3F1F1;--accent:#2E8F95">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fried_Fish_Fillet.JPG?width=600" alt="Foto de Pescado del día" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pescado-del-dia.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Mar</span>
+    <h3>Pescado del día</h3>
+    <p class="sub">Filete de pescado del día a la plancha</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 6</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/paila-marina.html" data-area="pescados" data-search="Paila Marina Principal Principal Pescados y mariscos Almeja fresca con concha Chorito fresco con concha Piure fresco Macha fresca con concha Camarones ecuatorianos 36/40 Picoroco sin concha Cebolla pluma Ajo Cilantro Limón Aceite de maravilla Fondo de pescado Ají de color Laurel Sal Pimienta Vino blanco" style="--area-bg:#D3F1F1;--accent:#2E8F95">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paila_marina_01.JPG?width=600" alt="Foto de Paila Marina" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/paila-marina.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Mar</span>
+    <h3>Paila Marina</h3>
+    <p class="sub">Principal</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 17</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/jardin-de-mariscos.html" data-area="pescados" data-search="Jardín de Mariscos Principal Principal Pescados y mariscos Choritos con concha Almejas fresca con concha Cholgas con concha Piures Camarón nacional Ulte Cebolla Ajo Aji verde Cilantro Jugo de limón Aceite de maravilla Sal Caldo de cocción de mariscos Pisco" style="--area-bg:#D3F1F1;--accent:#2E8F95">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Clams_cooked_in_Lemon_and_coriander.jpg?width=600" alt="Foto de Jardín de Mariscos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/jardin-de-mariscos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Mar</span>
+    <h3>Jardín de Mariscos</h3>
+    <p class="sub">Principal</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 15</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/pures-derivados.html" data-area="guarniciones" data-search="Purés derivados Purés derivados elaboradas con puré base, más pimientos, cebolla caramelizada, crema y ají. Guarnición Guarniciones Puré de papas Pimentón rojo Cebolla Leche Mantequilla Crema de leche Sal Pimienta Nuez Moscada Ají en pasta Aceite de maravilla" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pur%C3%A9_de_patates.JPG?width=600" alt="Foto de Purés derivados" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pures-derivados.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Purés derivados</h3>
+    <p class="sub">Purés derivados elaboradas con puré base, más pimientos, cebolla caramelizada, crema y ají.</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 6 etapas</span><span>🧂 11</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/arroz-pilaf.html" data-area="guarniciones" data-search="Arroz pilaf Guarnición Guarnición Guarniciones Cebolla Aceite Sal Pimienta Arroz grado 1 Agua (aprox.)" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rice_pilaf.jpg?width=600" alt="Foto de Arroz pilaf" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/arroz-pilaf.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Arroz pilaf</h3>
+    <p class="sub">Guarnición</p>
+    <div class="meta"><span>🍽️ 8 porciones</span><span>📝 3 etapas</span><span>🧂 6</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/masa-duquesa-y-papas-torneadas.html" data-area="guarniciones" data-search="Masa Duquesa y papas torneadas Papa duquesa Guarnición Guarniciones Papas Papas cocidas molidas Perejil Mantequilla Yemas Sal Pimienta Nuez moscada" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pommes_duchesse.jpg?width=600" alt="Foto de Masa Duquesa y papas torneadas" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/masa-duquesa-y-papas-torneadas.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Masa Duquesa y papas torneadas</h3>
+    <p class="sub">Papa duquesa</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 8</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/papas-croqueta.html" data-area="guarniciones" data-search="Papas croqueta Papa duquesa Guarnición Guarniciones Masa duquesa Harina Aceite para freír Pan rallado Huevos" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kartoffelkroketten.jpg?width=600" alt="Foto de Papas croqueta" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/papas-croqueta.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Papas croqueta</h3>
+    <p class="sub">Papa duquesa</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 2 etapas</span><span>🧂 5</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/papas-pont-neuf.html" data-area="guarniciones" data-search="Papas Pont Neuf Acompañamiento de papas fritas y cremosas Acompañamiento Guarniciones Papas Ajo Aceite Vegetal Sal" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pommes-1.jpg?width=600" alt="Foto de Papas Pont Neuf" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/papas-pont-neuf.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Papas Pont Neuf</h3>
+    <p class="sub">Acompañamiento de papas fritas y cremosas</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 4</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/vegetales-salteados.html" data-area="guarniciones" data-search="Vegetales salteados Guarnición Guarnición Guarniciones Zapallo italiano Cebollines Zanahorias Champiñones Tomillo Aceite de oliva Sal Pimienta Mantequilla" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mushrooms_and_carrots.jpg?width=600" alt="Foto de Vegetales salteados" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/vegetales-salteados.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Vegetales salteados</h3>
+    <p class="sub">Guarnición</p>
+    <div class="meta"><span>🍽️ 4 porciones</span><span>📝 3 etapas</span><span>🧂 9</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/arroz-creole.html" data-area="guarniciones" data-search="Arroz creole Guarnición Guarnición Guarniciones Arroz grado 1 Agua Sal Pimienta Mantequilla" style="--area-bg:#E4F2D2;--accent:#6A9A30">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_bowl_of_rice.jpg?width=600" alt="Foto de Arroz creole" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/arroz-creole.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Guarniciones</span>
+    <h3>Arroz creole</h3>
+    <p class="sub">Guarnición</p>
+    <div class="meta"><span>🍽️ 8 porciones</span><span>📝 3 etapas</span><span>🧂 5</span></div>
+  </div>
+</a></div>
+    <p class="empty">No hay recetas que coincidan. Prueba con otra palabra 🍋</p>
+  </div>
+</section>
+
+<section class="section" id="coccion">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Interactivo</span><h2>Puntos de cocción del vacuno</h2>
+      <p>Según la ficha de vacuno grillado: selecciona un punto para ver su temperatura interna y cómo reconocerlo.</p></div>
+    <div class="doneness reveal" role="tablist"><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#C2334B"></i>Inglesa o blue<small>40 – 45 ºC</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#D2566A"></i>Sangrante (rare)<small>50 – 55 ºC</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#E59A9A"></i>A punto (medium rare)<small>60 – 65 ºC</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#B08C7C"></i>Bien cocida (well done)<small>70 – 80 ºC</small></button></div>
+    <div class="dn-panel reveal"><div class="steak"></div><div class="dn-info"></div></div>
+    <p style="margin-top:14px"><a class="btn btn-soft" href="recetas/vacuno-grillado.html">Ver la ficha de vacuno grillado →</a></p>
+    <script type="application/json" id="doneness-data">[{"nombre": "Inglesa o blue", "temp": "40 – 45 ºC", "color": "#C2334B", "texto": "Corte jugoso, bordes grises y centro rojo, blando al tacto."}, {"nombre": "Sangrante (rare)", "temp": "50 – 55 ºC", "color": "#D2566A", "texto": "Corte jugoso, bordes grises y centro rojo rosado, blando con poca resistencia."}, {"nombre": "A punto (medium rare)", "temp": "60 – 65 ºC", "color": "#E59A9A", "texto": "Centro rosado y borde gris; aparecen gotas rosadas en la superficie. Resistente al tacto."}, {"nombre": "Bien cocida (well done)", "temp": "70 – 80 ºC", "color": "#B08C7C", "texto": "Centro gris, jugos transparentes y superficie firme al tacto."}]</script>
+  </div>
+</section>
+
+<section class="section" id="glosario">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Glosario</span><h2>Técnicas que aparecen en las fichas</h2>
+      <p>Pasa el cursor (o toca) cada tarjeta para ver su significado.</p></div>
+    <div class="flip-grid"><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--peach)"><small>Técnica</small><b>Mondar</b></div>
+  <div class="flip-face back">Técnica para pelar el tomate (según la ficha de ensalada mixta).</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--butter)"><small>Técnica</small><b>Blanquear</b></div>
+  <div class="flip-face back">Cocción por calor húmedo a partir de agua hirviendo con sal (según la ficha de ensalada mixta).</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--mint)"><small>Técnica</small><b>Brunoise</b></div>
+  <div class="flip-face back">Corte en cubos muy pequeños y parejos.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--sky)"><small>Técnica</small><b>Juliana</b></div>
+  <div class="flip-face back">Corte en bastones largos y finos.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--lav)"><small>Técnica</small><b>Pluma</b></div>
+  <div class="flip-face back">Corte de cebolla en láminas finas siguiendo sus vetas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--rose)"><small>Técnica</small><b>Rondelle</b></div>
+  <div class="flip-face back">Corte en rodajas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--peach)"><small>Técnica</small><b>Chiffonade</b></div>
+  <div class="flip-face back">Corte de hojas en tiras muy finas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--butter)"><small>Técnica</small><b>Mirepoix</b></div>
+  <div class="flip-face back">Mezcla de verduras aromáticas cortadas para fondos y salsas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--mint)"><small>Técnica</small><b>Bouquet garni</b></div>
+  <div class="flip-face back">Atado de hierbas aromáticas que se retira tras la cocción.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--sky)"><small>Técnica</small><b>Roux</b></div>
+  <div class="flip-face back">Mezcla cocida de mantequilla y harina para ligar.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--lav)"><small>Técnica</small><b>Sudar</b></div>
+  <div class="flip-face back">Cocinar a fuego suave en materia grasa, sin dorar.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--rose)"><small>Técnica</small><b>Chauffante</b></div>
+  <div class="flip-face back">Recipiente con agua caliente para cocinar o regenerar pastas.</div></div></button></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div><h4>🍳 Cocina Básica · Fichas técnicas</h4>
+      <p>Recetario digital construido a partir de las fichas técnicas de la asignatura Cocina Básica (PGG1101), Escuela de Gastronomía Duoc UC, sede San Andrés de Concepción.</p>
+      <p><a href="#" data-enlace="salsas" style="display:inline;opacity:1">🥣 Salsas</a> &nbsp;·&nbsp; <a href="#" data-enlace="panaderia" style="display:inline;opacity:1">🥖 Panadería</a></p></div>
+    <div><h4>Áreas</h4><a href="areas/ensaladas.html">Ensaladas y entradas frías</a><a href="areas/salsas.html">Salsas</a><a href="areas/fondos.html">Fondos y ayudas de cocina</a><a href="areas/sopas.html">Sopas, cremas y potajes</a><a href="areas/pastas.html">Pastas frescas</a><a href="areas/carnes.html">Carnes y aves</a><a href="areas/pescados.html">Pescados y mariscos</a><a href="areas/guarniciones.html">Guarniciones</a></div>
+    <div><h4>Explora</h4><a href="index.html#recetario">Todas las recetas</a><a href="index.html#coccion">Puntos de cocción</a><a href="index.html#glosario">Glosario</a></div>
+    <p class="legal">Contenido de uso educativo. Fotografías referenciales de Wikimedia Commons bajo licencias libres; créditos en cada receta. Página desarrollada por Claudia Gutierrez Poza para la carrera de Gastronomía Duoc UC.</p>
+  </div>
+</footer>
+<button class="to-top" aria-label="Volver arriba">↑</button>
+<script src="assets/js/enlaces.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
